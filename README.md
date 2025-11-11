@@ -99,38 +99,6 @@ Launches a **new EC2 instance** directly from the **saved AMI or snapshot ID** �
 terraform apply -target=module.new_ec2_snapshot_launch
 ```
 
-## 📁 Project Structure
-
-.
-├── ec2_instance_ids.log
-├── main.tf
-├── modules
-│   ├── 1_ec2-server
-│   │   ├── key_pair.tf
-│   │   ├── main.tf
-│   │   ├── outputs.tf
-│   │   ├── security_group.tf
-│   │   └── variables.tf
-│   ├── 2_ec2_snapshot_backup
-│   │   ├── main.tf
-│   │   ├── outputs.tf
-│   │   └── variables.tf
-│   └── 3_new_snapshot_ec2
-│       ├── key-pair.tf
-│       ├── main.tf
-│       ├── outputs.tf
-│       ├── security_group.tf
-│       └── variables.tf
-├── new_bash_script_install.sh
-├── outputs.tf
-├── provider.tf
-├── README.md
-├── snapshot_id.log
-├── snpashot_ec2_instance_ids.log
-├── terraform.tfvars
-└── variables.tf
-
-5 directories, 23 files
 
 
 
